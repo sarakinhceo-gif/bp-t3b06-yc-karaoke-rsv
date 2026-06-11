@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>염창 가라오케 예약 블로그 | 프리미엄 시스템 가이드</title>
+    <meta name="description" content="염창 최상위 가라오케 예약 시스템의 운영 노하우와 사운드 엔지니어링 가이드. 365일 24시간 운영, 프리미엄 사운드 시스템, 50곡 이상 실시간 업데이트. 10년 연속 염창 지역 만족도 1위. 전문 예약 상담 010-6279-0862.">
+    <meta name="keywords" content="염창 가라오케 예약, 염창 가라오케, 염창 노래방, 가라오케, 염창 역, 강서구 가라오케, 염창 룸, 노래방 예약, 염창 파티룸, 프리미엄 가라오케, 가라오케 사운드 시스템, 가라오케 음향">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b06-yc-karaoke-rsv.vercel.app/blog">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <meta property="og:title" content="염창 가라오케 예약 블로그 | 프리미엄 시스템 가이드">
+    <meta property="og:description" content="염창 최상위 가라오케 예약 시스템의 운영 노하우와 사운드 엔지니어링 가이드. 365일 24시간 운영, 프리미엄 사운드 시스템, 50곡 이상 실시간 업데이트.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://t3b06-yc-karaoke-rsv.vercel.app/blog">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="염창 프리미엄 가라오케 예약">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="염창 가라오케 예약 블로그 | 프리미엄 시스템 가이드">
+    <meta name="twitter:description" content="염창 최상위 가라오케 예약 시스템의 운영 노하우와 사운드 엔지니어링 가이드.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "염창 프리미엄 가라오케 예약",
+        "description": "염창 지역 최상위 가라오케 예약 시스템. 365일 24시간 운영, 프리미엄 사운드 시스템, 50곡 이상 실시간 업데이트. 10년 연속 염창 지역 만족도 1위.",
+        "url": "https://t3b06-yc-karaoke-rsv.vercel.app",
+        "telephone": "010-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울특별시 강서구",
+            "addressRegion": "염창동",
+            "addressCountry": "KR"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "00:00",
+                "closes": "23:59"
+            }
+        ],
+        "areaServed": "염창동, 강서구, 서울특별시",
+        "priceRange": "₩₩₩₩₩"
+    }
+    </script>
+    <style>
+        /* === CSS RESET & BASE === */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body {
+            font-family: 'IBM Plex Sans KR', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a1a;
+            color: #e0dcd0;
+            line-height: 1.6;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(255,255,255,0.02) 2px,
+                rgba(255,255,255,0.02) 4px
+            );
+            pointer-events: none;
+            z-index: 9999;
+        }
+        a {
+            color: #ffd700;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        a:hover {
+            color: #fff3b0;
+            border-bottom-color: #ffd700;
+        }
+        img, svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+        h1 {
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            margin-bottom: 1rem;
+            color: #f5f0e8;
+            text-shadow: 4px 4px 0 #2a2a2a, 6px 6px 0 rgba(255,215,0,0.15);
+        }
+        h2 {
+            font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+            margin-bottom: 0.75rem;
+            color: #f5f0e8;
+            border-left: 6px solid #ffd700;
+            padding-left: 1rem;
+        }
+        h3 {
+            font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+            margin-bottom: 0.5rem;
+            color: #f5f0e8;
+        }
+        p {
+            margin-bottom: 1.25rem;
+            color: #c8c4b8;
+            font-size: 1.05rem;
+        }
+        strong {
+            color: #ffd700;
+            font-weight: 700;
+        }
+
+        /* === LAYOUT TOKENS (balanced space) === */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* === HEADER / NAV (brutalist concrete) === */
+        nav {
+            background: #222222;
+            border-bottom: 4px solid #ffd700;
+            padding: 0.8rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #ffd700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-bottom: none;
+        }
+        nav .logo:hover {
+            color: #fff3b0;
+            border-bottom: none;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav ul li a {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            padding: 0.3rem 0;
+            color: #c8c4b8;
+            border-bottom: 2px solid transparent;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            color: #ffd700;
+            border-bottom-color: #ffd700;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: #ffd700;
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: flex;
+            }
+            nav ul {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                background: #222222;
+                padding: 1rem 0;
+                gap: 0.5rem;
+                border-top: 2px solid #ffd700;
+                margin-top: 0.5rem;
+            }
+            nav ul.open {
+                display: flex;
+            }
+            nav ul li {
+                text-align: center;
+                width: 100%;
+            }
+            nav ul li a {
+                font-size: 1rem;
+                padding: 0.6rem 0;
+                display: block;
+                border-bottom: none;
+            }
+        }
+
+        /* === HERO SECTION (brutalist block) === */
+        .hero {
+            padding: 3rem 0 2.5rem;
+            background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
+            border-bottom: 3px solid #ffd700;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0; right: 0;
+            height: 6px;
+            background: repeating-linear-gradient(90deg, #ffd700 0px, #ffd700 8px, transparent 8px, transparent 16px);
+        }
+        .hero h1 {
+            margin-bottom: 0.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #b0aca0;
+            max-width: 700px;
+        }
+
+        /* === ARTICLE / CONTENT BLOCKS === */
+        .blog-post {
+            padding: 2.5rem 0 3rem;
+        }
+        .blog-post .container {
+            background: #1e1e1e;
+            padding: 2rem 2.5rem;
+            border: 1px solid #333;
+            box-shadow: 8px 8px 0 #0a0a0a;
+        }
+        .blog-post .meta {
+            color: #888;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid #333;
+        }
+        .blog-post .meta span {
+            margin-right: 1.5rem;
+        }
+        .blog-post blockquote {
+            border-left: 6px solid #ffd700;
+            background: #2a2a2a;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #d8d4c8;
+        }
+        .blog-post ul, .blog-post ol {
+            margin: 1rem 0 1.5rem 2rem;
+            color: #c8c4b8;
+        }
+        .blog-post li {
+            margin-bottom: 0.5rem;
+        }
+        .blog-post .highlight-box {
+            background: #2a2a2a;
+            border: 1px solid #ffd700;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            position: relative;
+        }
+        .blog-post .highlight-box::before {
+            content: 'KEY INSIGHT';
+            position: absolute;
+            top: -12px;
+            left: 1rem;
+            background: #1e1e1e;
+            padding: 0 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #ffd700;
+            letter-spacing: 0.15em;
+        }
+
+        /* === FAQ SECTION (accordion style) === */
+        .faq-section {
+            padding: 2.5rem 0;
+            border-top: 1px solid #333;
+        }
+        .faq-item {
+            background: #1e1e1e;
+            border: 1px solid #333;
+            margin-bottom: 0.75rem;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .faq-item:hover {
+            background: #252525;
+        }
+        .faq-item .question {
+            font-weight: 700;
+            color: #ffd700;
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+        .faq-item .answer {
+            color: #b0aca0;
+            line-height: 1.6;
+            display: none;
+            padding-top: 0.5rem;
+        }
+        .faq-item.active .answer {
+            display: block;
+        }
+
+        /* === TEL LINK (prominent CTA) === */
+        .tel-link {
+            display: inline-block;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #ffd700;
+            background: #2a2a2a;
+            padding: 0.6rem 2rem;
+            border: 2px solid #ffd700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            transition: all 0.2s;
+            margin-top: 0.5rem;
+        }
+        .tel-link:hover {
+            background: #ffd700;
+            color: #1a1a1a;
+            border-color: #ffd700;
+        }
+
+        /* === FOOTER (brutalist heavy) === */
+        footer {
+            background: #111;
+            border-top: 4px solid #ffd700;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        footer p {
+            color: #888;
+            font-size: 0.85rem;
+            margin-bottom: 0.3rem;
+        }
+        footer a {
+            color: #ffd700;
+        }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            .blog-post .container {
+                padding: 1.5rem;
+            }
+            .blog-post ul, .blog-post ol {
+                margin-left: 1.2rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+            .tel-link {
+                font-size: 1.1rem;
+                padding: 0.5rem 1.2rem;
+            }
+            .hero {
+                padding: 2rem 0 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 네비게이션 -->
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">염창 가라오케</a>
+            <button class="hamburger-menu" onclick="this.classList.toggle('active'); document.querySelector('nav ul').classList.toggle('open');" aria-label="메뉴 열기">
+                <span></span><span></span><span></span>
+            </button>
+            <ul>
+                <li><a href="/">홈</a></li>
+                <li><a href="/about">소개</a></li>
+                <li><a href="/reservation">예약</a></li>
+                <li><a href="/blog" class="active">블로그</a></li>
+                <li><a href="/contact">문의</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 히어로 영역 -->
+    <section class="hero">
+        <div class="container">
+            <h1>프리미엄 가라오케<br>사운드 엔지니어링 가이드</h1>
+            <p>염
+</body>
+</html>
