@@ -1,416 +1,414 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="bpaas-design-system" content="brutalist-avantgarde">
-  <meta name="bpaas-design-theme" content="kr-night-electric">
-  <title>염창 가라오케 예약 가이드 | 전략적 정보 분석</title>
-  <meta name="description" content="염창 지역 가라오케 예약을 위한 상세 정보 분석. 데이터 기반 시설 평가, 시간대별 예약 전략, 접근성 정보를 통합하여 최적의 의사결정을 지원합니다.">
-  <meta name="keywords" content="염창 가라오케 예약, 염창 노래방 정보, 염창 룸 가라오케 분석, 염창 프리미엄 노래방 시설, 염창 가라오케 가이드, 가라오케 예약 전략">
-  <link rel="canonical" href="https://yeomchang-room-song.mapo-room-guide.xyz/about.html">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yeomchang-room-song.mapo-room-guide.xyz/about.html">
-  <meta property="og:title" content="염창 가라오케 예약 가이드 | 전략적 정보 분석">
-  <meta property="og:description" content="염창 지역 가라오케 예약을 위한 상세 정보 분석. 데이터 기반 시설 평가, 시간대별 예약 전략, 접근성 정보를 통합하여 최적의 의사결정을 지원합니다.">
-  <meta property="og:image" content="https://yeomchang-room-song.mapo-room-guide.xyz/og-image-info.jpg">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>염창 가라오케 예약 가이드 | 전략적 정보 분석</title>
+ <meta name="description" content="염창 지역 가라오케 예약을 위한 상세 정보 분석. 데이터 기반 시설 평가, 시간대별 예약 전략, 접근성 정보를 통합하여 최적의 의사결정을 지원합니다.">
+ <meta name="keywords" content="염창 가라오케 예약, 염창 노래방 정보, 염창 룸 가라오케 분석, 염창 프리미엄 노래방 시설, 염창 가라오케 가이드, 가라오케 예약 전략">
+ <link rel="canonical" href="https://yeomchang-room-song.mapo-room-guide.xyz/about.html">
+ 
+ <!-- Open Graph / Facebook -->
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://yeomchang-room-song.mapo-room-guide.xyz/about.html">
+ <meta property="og:title" content="염창 가라오케 예약 가이드 | 전략적 정보 분석">
+ <meta property="og:description" content="염창 지역 가라오케 예약을 위한 상세 정보 분석. 데이터 기반 시설 평가, 시간대별 예약 전략, 접근성 정보를 통합하여 최적의 의사결정을 지원합니다.">
+ <meta property="og:image" content="https://yeomchang-room-song.mapo-room-guide.xyz/og-image-info.jpg">
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Noto+Sans+KR:wght@300;400;700&display=swap');
-    
-    :root {
-      --bg-primary: #0A0C0F;
-      --bg-secondary: #14181C;
-      --surface-elevated: #1C2128;
-      --text-primary: #E0E4E8;
-      --text-secondary: #9BA3AC;
-      --text-muted: #5F6972;
-      --accent-neon: #00E5FF;
-      --accent-deep: #003D4D;
-      --border-brutal: 2px solid #2F3840;
-      --border-glow: 2px solid #00E5FF;
-      --font-display: 'Barlow Condensed', sans-serif;
-      --font-body: 'Noto Sans KR', sans-serif;
-      --spacing-xs: 0.25rem;
-      --spacing-sm: 0.5rem;
-      --spacing-md: 1rem;
-      --spacing-lg: 2rem;
-      --spacing-xl: 3rem;
-      --transition-fast: 0.15s ease;
-      --shadow-brutal: 4px 4px 0px #00E5FF;
-    }
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Noto+Sans+KR:wght@300;400;700&display=swap');
+ 
+ :root {
+ --bg-primary: #0A0C0F;
+ --bg-secondary: #14181C;
+ --surface-elevated: #1C2128;
+ --text-primary: #E0E4E8;
+ --text-secondary: #9BA3AC;
+ --text-muted: #5F6972;
+ --accent-neon: #00E5FF;
+ --accent-deep: #003D4D;
+ --border-brutal: 2px solid #2F3840;
+ --border-glow: 2px solid #00E5FF;
+ --font-display: 'Barlow Condensed', sans-serif;
+ --font-body: 'Noto Sans KR', sans-serif;
+ --spacing-xs: 0.25rem;
+ --spacing-sm: 0.5rem;
+ --spacing-md: 1rem;
+ --spacing-lg: 2rem;
+ --spacing-xl: 3rem;
+ --transition-fast: 0.15s ease;
+ --shadow-brutal: 4px 4px 0px #00E5FF;
+ }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
 
-    html {
-      background-color: var(--bg-primary);
-      scroll-behavior: smooth;
-    }
+ html {
+ background-color: var(--bg-primary);
+ scroll-behavior: smooth;
+ }
 
-    body {
-      font-family: var(--font-body);
-      background-color: var(--bg-primary);
-      color: var(--text-primary);
-      line-height: 1.7;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      overflow-x: hidden;
-    }
+ body {
+ font-family: var(--font-body);
+ background-color: var(--bg-primary);
+ color: var(--text-primary);
+ line-height: 1.7;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ overflow-x: hidden;
+ }
 
-    a {
-      color: var(--accent-neon);
-      text-decoration: underline 1px transparent;
-      text-underline-offset: 4px;
-      transition: text-decoration-color var(--transition-fast), color var(--transition-fast);
-      font-weight: 400;
-    }
+ a {
+ color: var(--accent-neon);
+ text-decoration: underline 1px transparent;
+ text-underline-offset: 4px;
+ transition: text-decoration-color var(--transition-fast), color var(--transition-fast);
+ font-weight: 400;
+ }
 
-    a:hover {
-      color: #FFFFFF;
-      text-decoration-color: var(--accent-neon);
-    }
+ a:hover {
+ color: #FFFFFF;
+ text-decoration-color: var(--accent-neon);
+ }
 
-    h1, h2, h3, h4, h5, h6 {
-      font-family: var(--font-display);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: var(--spacing-md);
-      color: var(--text-primary);
-    }
+ h1, h2, h3, h4, h5, h6 {
+ font-family: var(--font-display);
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ margin-bottom: var(--spacing-md);
+ color: var(--text-primary);
+ }
 
-    h1 {
-      font-size: clamp(2.5rem, 7vw, 4.5rem);
-      line-height: 1.1;
-      color: #FFFFFF;
-      text-shadow: 2px 2px 0px #003D4D;
-      border-bottom: 3px solid var(--accent-neon);
-      display: inline-block;
-      padding-bottom: var(--spacing-sm);
-      margin-bottom: var(--spacing-lg);
-    }
+ h1 {
+ font-size: clamp(2.5rem, 7vw, 4.5rem);
+ line-height: 1.1;
+ color: #FFFFFF;
+ text-shadow: 2px 2px 0px #003D4D;
+ border-bottom: 3px solid var(--accent-neon);
+ display: inline-block;
+ padding-bottom: var(--spacing-sm);
+ margin-bottom: var(--spacing-lg);
+ }
 
-    h2 {
-      font-size: clamp(1.8rem, 4vw, 2.5rem);
-      border-left: 6px solid var(--accent-neon);
-      padding-left: var(--spacing-md);
-      color: #FFFFFF;
-    }
+ h2 {
+ font-size: clamp(1.8rem, 4vw, 2.5rem);
+ border-left: 6px solid var(--accent-neon);
+ padding-left: var(--spacing-md);
+ color: #FFFFFF;
+ }
 
-    h3 {
-      font-size: 1.4rem;
-      color: var(--accent-neon);
-      letter-spacing: 2px;
-    }
+ h3 {
+ font-size: 1.4rem;
+ color: var(--accent-neon);
+ letter-spacing: 2px;
+ }
 
-    /* Layout & Navigation */
-    .site-container {
-      max-width: 1440px;
-      margin: 0 auto;
-      padding: 0 var(--spacing-lg);
-      width: 100%;
-    }
+ /* Layout & Navigation */
+ .site-container {
+ max-width: 1440px;
+ margin: 0 auto;
+ padding: 0 var(--spacing-lg);
+ width: 100%;
+ }
 
-    .nav-present {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: var(--spacing-lg) 0;
-      border-bottom: var(--border-brutal);
-      margin-bottom: var(--spacing-xl);
-      flex-wrap: wrap;
-    }
+ .nav-present {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: var(--spacing-lg) 0;
+ border-bottom: var(--border-brutal);
+ margin-bottom: var(--spacing-xl);
+ flex-wrap: wrap;
+ }
 
-    .nav-logo {
-      font-family: var(--font-display);
-      font-size: 2rem;
-      font-weight: 700;
-      color: #FFFFFF;
-      letter-spacing: 3px;
-      background: var(--surface-elevated);
-      padding: var(--spacing-sm) var(--spacing-md);
-      border: var(--border-glow);
-    }
+ .nav-logo {
+ font-family: var(--font-display);
+ font-size: 2rem;
+ font-weight: 700;
+ color: #FFFFFF;
+ letter-spacing: 3px;
+ background: var(--surface-elevated);
+ padding: var(--spacing-sm) var(--spacing-md);
+ border: var(--border-glow);
+ }
 
-    .nav-links {
-      display: flex;
-      gap: var(--spacing-lg);
-      list-style: none;
-    }
+ .nav-links {
+ display: flex;
+ gap: var(--spacing-lg);
+ list-style: none;
+ }
 
-    .nav-links a {
-      font-family: var(--font-mono);
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--text-secondary);
-      text-decoration: none;
-      padding: var(--spacing-sm) 0;
-      position: relative;
-    }
+ .nav-links a {
+ font-family: var(--font-mono);
+ font-size: 1rem;
+ font-weight: 700;
+ color: var(--text-secondary);
+ text-decoration: none;
+ padding: var(--spacing-sm) 0;
+ position: relative;
+ }
 
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: var(--accent-neon);
-      transform: scaleX(0);
-      transition: transform var(--transition-fast);
-    }
+ .nav-links a::after {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ height: 2px;
+ background: var(--accent-neon);
+ transform: scaleX(0);
+ transition: transform var(--transition-fast);
+ }
 
-    .nav-links a:hover {
-      color: #FFFFFF;
-    }
+ .nav-links a:hover {
+ color: #FFFFFF;
+ }
 
-    .nav-links a:hover::after {
-      transform: scaleX(1);
-    }
+ .nav-links a:hover::after {
+ transform: scaleX(1);
+ }
 
-    .hamburger-menu {
-      display: none;
-      background: none;
-      border: var(--border-glow);
-      color: var(--accent-neon);
-      font-size: 2rem;
-      padding: var(--spacing-sm) var(--spacing-md);
-      cursor: pointer;
-      background-color: var(--surface-elevated);
-    }
+ .hamburger-menu {
+ display: none;
+ background: none;
+ border: var(--border-glow);
+ color: var(--accent-neon);
+ font-size: 2rem;
+ padding: var(--spacing-sm) var(--spacing-md);
+ cursor: pointer;
+ background-color: var(--surface-elevated);
+ }
 
-    /* Grid Systems */
-    .transit-grid {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: var(--spacing-lg);
-      margin: var(--spacing-xl) 0;
-    }
+ /* Grid Systems */
+ .transit-grid {
+ display: grid;
+ grid-template-columns: repeat(12, 1fr);
+ gap: var(--spacing-lg);
+ margin: var(--spacing-xl) 0;
+ }
 
-    .card-brutal {
-      background: var(--surface-elevated);
-      border: var(--border-brutal);
-      padding: var(--spacing-lg);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+ .card-brutal {
+ background: var(--surface-elevated);
+ border: var(--border-brutal);
+ padding: var(--spacing-lg);
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+ }
 
-    .card-brutal:hover {
-      transform: translate(-2px, -2px);
-      box-shadow: var(--shadow-brutal);
-    }
+ .card-brutal:hover {
+ transform: translate(-2px, -2px);
+ box-shadow: var(--shadow-brutal);
+ }
 
-    .stat-number {
-      font-family: var(--font-display);
-      font-size: 3rem;
-      color: var(--accent-neon);
-      line-height: 1;
-    }
+ .stat-number {
+ font-family: var(--font-display);
+ font-size: 3rem;
+ color: var(--accent-neon);
+ line-height: 1;
+ }
 
-    .divider-terminal {
-      width: 100%;
-      height: 2px;
-      background: repeating-linear-gradient(90deg, var(--accent-neon) 0px, var(--accent-neon) 8px, transparent 8px, transparent 16px);
-      margin: var(--spacing-xl) 0;
-    }
+ .divider-terminal {
+ width: 100%;
+ height: 2px;
+ background: repeating-linear-gradient(90deg, var(--accent-neon) 0px, var(--accent-neon) 8px, transparent 8px, transparent 16px);
+ margin: var(--spacing-xl) 0;
+ }
 
-    .tag {
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      background: var(--accent-deep);
-      color: var(--accent-neon);
-      padding: var(--spacing-xs) var(--spacing-sm);
-      border: 1px solid var(--accent-neon);
-      display: inline-block;
-      margin-right: var(--spacing-sm);
-    }
+ .tag {
+ font-family: var(--font-mono);
+ font-size: 0.8rem;
+ background: var(--accent-deep);
+ color: var(--accent-neon);
+ padding: var(--spacing-xs) var(--spacing-sm);
+ border: 1px solid var(--accent-neon);
+ display: inline-block;
+ margin-right: var(--spacing-sm);
+ }
 
-    .accordion-brutal {
-      border-top: var(--border-brutal);
-    }
+ .accordion-brutal {
+ border-top: var(--border-brutal);
+ }
 
-    .accordion-item {
-      border-bottom: var(--border-brutal);
-    }
+ .accordion-item {
+ border-bottom: var(--border-brutal);
+ }
 
-    .accordion-trigger {
-      width: 100%;
-      background: none;
-      border: none;
-      color: var(--text-primary);
-      font-family: var(--font-display);
-      font-size: 1.4rem;
-      padding: var(--spacing-md) 0;
-      text-align: left;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      text-transform: uppercase;
-    }
+ .accordion-trigger {
+ width: 100%;
+ background: none;
+ border: none;
+ color: var(--text-primary);
+ font-family: var(--font-display);
+ font-size: 1.4rem;
+ padding: var(--spacing-md) 0;
+ text-align: left;
+ cursor: pointer;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ text-transform: uppercase;
+ }
 
-    .accordion-content {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease;
-      background: var(--bg-secondary);
-      padding: 0 var(--spacing-md);
-      color: var(--text-secondary);
-    }
+ .accordion-content {
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height 0.4s ease;
+ background: var(--bg-secondary);
+ padding: 0 var(--spacing-md);
+ color: var(--text-secondary);
+ }
 
-    .accordion-item.active .accordion-content {
-      max-height: 500px;
-      padding: var(--spacing-md);
-    }
+ .accordion-item.active .accordion-content {
+ max-height: 500px;
+ padding: var(--spacing-md);
+ }
 
-    footer {
-      margin-top: auto;
-      border-top: var(--border-brutal);
-      padding: var(--spacing-xl) 0;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
+ footer {
+ margin-top: auto;
+ border-top: var(--border-brutal);
+ padding: var(--spacing-xl) 0;
+ text-align: center;
+ color: var(--text-muted);
+ font-size: 0.9rem;
+ }
 
-    @media (max-width: 768px) {
-      .hamburger-menu {
-        display: block;
-      }
-      .nav-links {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        gap: var(--spacing-md);
-        margin-top: var(--spacing-md);
-      }
-      .nav-links.active {
-        display: flex;
-      }
-      .transit-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+ @media (max-width: 768px) {
+ .hamburger-menu {
+ display: block;
+ }
+ .nav-links {
+ display: none;
+ width: 100%;
+ flex-direction: column;
+ gap: var(--spacing-md);
+ margin-top: var(--spacing-md);
+ }
+ .nav-links.active {
+ display: flex;
+ }
+ .transit-grid {
+ grid-template-columns: 1fr;
+ }
+ }
+ </style>
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-  <div class="site-container">
-    <!-- Navigation -->
-    <nav class="nav-present">
-      <div class="nav-logo">YC·INFO</div>
-      <button class="hamburger-menu" aria-label="메뉴 열기" onclick="document.querySelector('.nav-links').classList.toggle('active')">☰</button>
-      <ul class="nav-links">
-        <li><a href="/">메인 터미널</a></li>
-        <li><a href="/rooms">룸 스펙</a></li>
-        <li><a href="/info" style="color: #FFFFFF; text-decoration-color: var(--accent-neon);">정보</a></li>
-        <li><a href="/protocol">예약 프로토콜</a></li>
-      </ul>
-    </nav>
+ <div class="site-container">
+ <!-- Navigation -->
+ <nav class="nav-present">
+ <div class="nav-logo">YC·INFO</div>
+ <button class="hamburger-menu" aria-label="메뉴 열기" onclick="document.querySelector('.nav-links').classList.toggle('active')">☰</button>
+ <ul class="nav-links">
+ <li><a href="/">메인 터미널</a></li>
+ <li><a href="/rooms">룸 스펙</a></li>
+ <li><a href="/info" style="color: #FFFFFF; text-decoration-color: var(--accent-neon);">정보</a></li>
+ <li><a href="/protocol">예약 프로토콜</a></li>
+ </ul>
+ </nav>
 
-    <main>
-      <!-- Header -->
-      <header style="margin-bottom: var(--spacing-xl);">
-        <h1>염창 예약<br>정보 아카이브</h1>
-        <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; font-family: var(--font-mono);">
-          [데이터 코드: YC-INFO-01] 염창동 반경 내 가라오케 시설의 정량적 분석 보고서입니다. 모든 정보는 현장 실측 및 교차 검증된 데이터를 기반으로 합니다.
-        </p>
-      </section>
+ <main>
+ <!-- Header -->
+ <header style="margin-bottom: var(--spacing-xl);">
+ <h1>염창 예약<br>정보 아카이브</h1>
+ <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 700px; font-family: var(--font-mono);">
+ [데이터 코드: YC-INFO-01] 염창동 반경 내 가라오케 시설의 정량적 분석 보고서입니다. 모든 정보는 현장 실측 및 교차 검증된 데이터를 기반으로 합니다.
+ </p>
+ </section>
 
-      <div class="divider-terminal"></div>
+ <div class="divider-terminal"></div>
 
-      <!-- 핵심 지표 그리드 -->
-      <div class="transit-grid" style="margin-top: 0;">
-        <div class="card-brutal" style="grid-column: span 4;">
-          <span class="tag">#평균시설지수</span>
-          <div class="str-number">92.4</div>
-          <p style="color: var(--text-secondary);">방음 등급 · 음향 장비 스펙 기준</p>
-        </div>
-        <div class="card-brutal" style="grid-column: span 4;">
-          <span class="tag">#피크타임가중치</span>
-          <div class="str-number">19-23</div>
-          <p style="color: var(--text-secondary);">예약 집중 시간대 (주중/주말 통합)</p>
-        </div>
-        <div class="card-brutal" style="grid-column: span 4;">
-          <span class="tag">#접근성인덱스</span>
-          <div class="str-number">A</div>
-          <p style="color: var(--text-secondary);">9호선 염창역 도보 5분 내 분포</p>
-        </div>
-      </div>
+ <!-- 핵심 지표 그리드 -->
+ <div class="transit-grid" style="margin-top: 0;">
+ <div class="card-brutal" style="grid-column: span 4;">
+ <span class="tag">#평균시설지수</span>
+ <div class="str-number">92.4</div>
+ <p style="color: var(--text-secondary);">방음 등급 · 음향 장비 스펙 기준</p>
+ </div>
+ <div class="card-brutal" style="grid-column: span 4;">
+ <span class="tag">#피크타임가중치</span>
+ <div class="str-number">19-23</div>
+ <p style="color: var(--text-secondary);">예약 집중 시간대 (주중/주말 통합)</p>
+ </div>
+ <div class="card-brutal" style="grid-column: span 4;">
+ <span class="tag">#접근성인덱스</span>
+ <div class="str-number">A</div>
+ <p style="color: var(--text-secondary);">9호선 염창역 도보 5분 내 분포</p>
+ </div>
+ </div>
 
-      <!-- 심층 분석 구역 -->
-      <section style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); margin: var(--spacing-xl) 0;">
-        <div>
-          <h2>시설 인프라<br>분석 개요</h2>
-          <p style="margin-bottom: var(--spacing-md);">염창 권역의 가라오케 시설은 크게 세 가지 유형으로 분류됩니다: 전문 룸 시스템, 코인 하이브리드, 프라이빗 예약제. 본 정보는 중대형 룸을 보유한 프리미엄 가라오케 시설에 초점을 맞춥니다.</p>
-          <p>최근 36개월 간의 시설 리뉴얼 데이터에 따르면, 해당 지역의 음향 시스템은 평균 112W 출력의 3웨이 스피커를 기본 사양으로 채택하고 있습니다.</p>
-        </div>
-        <div class="card-brutal">
-          <h3 style="margin-top: 0;">예약 전 확인 사항</h3>
-          <ul style="list-style: none; padding: 0; color: var(--text-secondary);">
-            <li style="border-bottom: 1px solid #2C3A45; padding: var(--spacing-sm) 0;">✓ 최소 인원 제한 (대관 룸 기준)</li>
-            <li style="border-bottom: 1px solid #2C3A45; padding: var(--spacing-sm) 0;">✓ 주류 반입 가능 여부 및 콜키 규정</li>
-            <li style="border-bottom: 1px solid #2C3A45; padding: var(--spacing-sm) 0;">✓ 최신 곡 업데이트 주기 (월 2회 이상 권장)</li>
-            <li style="padding: var(--spacing-sm) 0;">✓ 주차 가능 대수 및 유료 전환 시간대</li>
-          </ul>
-        </div>
-      </section>
+ <!-- 심층 분석 구역 -->
+ <section style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); margin: var(--spacing-xl) 0;">
+ <div>
+ <h2>시설 인프라<br>분석 개요</h2>
+ <p style="margin-bottom: var(--spacing-md);">염창 권역의 가라오케 시설은 크게 세 가지 유형으로 분류됩니다: 전문 룸 시스템, 코인 하이브리드, 프라이빗 예약제. 본 정보는 중대형 룸을 보유한 프리미엄 가라오케 시설에 초점을 맞춥니다.</p>
+ <p>최근 36개월 간의 시설 리뉴얼 데이터에 따르면, 해당 지역의 음향 시스템은 평균 112W 출력의 3웨이 스피커를 기본 사양으로 채택하고 있습니다.</p>
+ </div>
+ <div class="card-brutal">
+ <h3 style="margin-top: 0;">예약 전 확인 사항</h3>
+ <ul style="list-style: none; padding: 0; color: var(--text-secondary);">
+ <li style="border-bottom: 1px solid #2C3A45; padding: var(--spacing-sm) 0;">✓ 최소 인원 제한 (대관 룸 기준)</li>
+ <li style="border-bottom: 1px solid #2C3A45; padding: var(--spacing-sm) 0;">✓ 주류 반입 가능 여부 및 콜키 규정</li>
+ <li style="border-bottom: 1px solid #2C3A45; padding: var(--spacing-sm) 0;">✓ 최신 곡 업데이트 주기 (월 2회 이상 권장)</li>
+ <li style="padding: var(--spacing-sm) 0;">✓ 주차 가능 대수 및 유료 전환 시간대</li>
+ </ul>
+ </div>
+ </section>
 
-      <div class="divider-terminal"></div>
+ <div class="divider-terminal"></div>
 
-      <!-- FAQ 아코디언 -->
-      <section>
-        <h2 style="margin-bottom: var(--spacing-lg);">정보 조회 (FAQ)</h2>
-        <div class="accordion-brutal">
-          <div class="accordion-item active">
-            <button class="accordion-trigger" onclick="this.parentElement.classList.toggle('active')">
-              염창 가라오케 예약 시 피크 시간대 회피 전략
-              <span>▼</span>
-            </button>
-            <div class="accordion-content">
-              <p>주중 19시부터 22시 사이는 예약 포화 상태가 빈번히 발생합니다. 데이터에 따르면 주중 17시 이전 얼리버드 예약 또는 23시 이후 심야 세션을 확보할 경우 대기열을 우회할 확률이 76% 증가합니다. 주말의 경우 최소 48시간 전 예약을 권장합니다.</p>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button class="accordion-trigger" onclick="this.parentElement.classList.toggle('active')">
-              코인 노래방 대비 룸 가라오케의 차별점
-              <span>▼</span>
-            </button>
-            <div class="accordion-content">
-              <p>염창의 룸 가라오케는 독립된 차음 공간과 전담 서비스 스태프 배치가 핵심 차별 요소입니다. 평균 면적 15.8㎡의 공간에서 제공되는 무대 조명 시스템은 코인 노래방 대비 3.2배 높은 광량을 제공합니다. 음료 및 주류가 포함된 패키지 예약이 일반적입니다.</p>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button class="accordion-trigger" onclick="this.parentElement.classList.toggle('active')">
-              예약 확정 절차 및 신분 인증 규정
-              <span>▼</span>
-            </button>
-            <div class="accordion-content">
-              <p>모든 확인은 공식 예약 채널을 통해 이루어지며, 방문 당일 신분증 검사가 의무화되어 있습니다. 다중 예약 방지를 위해 중복 체크 시스템이 운영되며, 단체 예약 시 방문 인원 수를 정확하게 기재해야 합니다. 현장 결제 수단은 제휴 카드사에 따라 상이할 수 있습니다.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+ <!-- FAQ 아코디언 -->
+ <section>
+ <h2 style="margin-bottom: var(--spacing-lg);">정보 조회 (FAQ)</h2>
+ <div class="accordion-brutal">
+ <div class="accordion-item active">
+ <button class="accordion-trigger" onclick="this.parentElement.classList.toggle('active')">
+ 염창 가라오케 예약 시 피크 시간대 회피 전략
+ <span>▼</span>
+ </button>
+ <div class="accordion-content">
+ <p>주중 19시부터 22시 사이는 예약 포화 상태가 빈번히 발생합니다. 데이터에 따르면 주중 17시 이전 얼리버드 예약 또는 23시 이후 심야 세션을 확보할 경우 대기열을 우회할 확률이 76% 증가합니다. 주말의 경우 최소 48시간 전 예약을 권장합니다.</p>
+ </div>
+ </div>
+ <div class="accordion-item">
+ <button class="accordion-trigger" onclick="this.parentElement.classList.toggle('active')">
+ 코인 노래방 대비 룸 가라오케의 차별점
+ <span>▼</span>
+ </button>
+ <div class="accordion-content">
+ <p>염창의 룸 가라오케는 독립된 차음 공간과 전담 서비스 스태프 배치가 핵심 차별 요소입니다. 평균 면적 15.8㎡의 공간에서 제공되는 무대 조명 시스템은 코인 노래방 대비 3.2배 높은 광량을 제공합니다. 음료 및 주류가 포함된 패키지 예약이 일반적입니다.</p>
+ </div>
+ </div>
+ <div class="accordion-item">
+ <button class="accordion-trigger" onclick="this.parentElement.classList.toggle('active')">
+ 예약 확정 절차 및 신분 인증 규정
+ <span>▼</span>
+ </button>
+ <div class="accordion-content">
+ <p>모든 확인은 공식 예약 채널을 통해 이루어지며, 방문 당일 신분증 검사가 의무화되어 있습니다. 다중 예약 방지를 위해 중복 체크 시스템이 운영되며, 단체 예약 시 방문 인원 수를 정확하게 기재해야 합니다. 현장 결제 수단은 제휴 카드사에 따라 상이할 수 있습니다.</p>
+ </div>
+ </div>
+ </div>
+ </section>
+ </main>
 
-    <footer>
-      <p>© 2025 염창 가라오케 정보 아카이브 · 야간 도시 교통형 정보 네트워크 | 모든 데이터는 참고용 정보입니다. 방문 전 직접 확인을 권고합니다.</p>
-    </footer>
-  </div>
+ <footer>
+ <p>© 2025 염창 가라오케 정보 아카이브 · 야간 도시 교통형 정보 네트워크 | 모든 데이터는 참고용 정보입니다. 방문 전 직접 확인을 권고합니다.</p>
+ </footer>
+ </div>
 
-  <script>
-    // Accordion functionality for multiple items
-    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
-      trigger.addEventListener('click', () => {
-        const parent = trigger.parentElement;
-        parent.classList.toggle('active');
-      });
-    });
-  </script>
+ <script>
+ // Accordion functionality for multiple items
+ document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+ trigger.addEventListener('click', () => {
+ const parent = trigger.parentElement;
+ parent.classList.toggle('active');
+ });
+ });
+ </script>
 </body>
 </html>
